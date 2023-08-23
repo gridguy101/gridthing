@@ -3,7 +3,7 @@
   <head>
     <title>Funny grid site lol</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <style>
       * {
         box-sizing: border-box;
@@ -45,7 +45,8 @@
         flex-direction: column;
         padding: 1em;
         transition: transform 0.2s ease-in-out;
-        /*width: 100%;*/
+        width: 100%;
+        max-width: 260px;
       }
       
       .button:hover {
