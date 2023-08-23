@@ -76,7 +76,12 @@
     </style>
   </head>
   
-  <body>    
+  <body>
+    <div style="width: 100%;display: flex;justify-content: center;">
+      <div style="display: flex;justify-content: center;margin-top: 20px;height: 40px;width: 90%;border-radius: 20px;border: solid 2px #868686;background-color: #575757;">
+          <input onchange="search(this.value);" style="width: 96%;border: none;background: none;outline: none;color: #d9d8d8;">
+      </div>
+    </div>
     <div id="button-grid">
       <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1vW-nFbnR02F9BEnNPe5NBejHRGPt0QEGOYXLSePsC1k'">
         <img src="Images/ye.jpg" alt="Button 1">
@@ -339,7 +344,17 @@
           // Do something when button is clicked
         });
       });
+      function search(input) {
+      	var names = document.getElementsByTagName("h2");
+      	var bttns = document.getElementsByTagName("button");
+      	for (let i = 0; i < names.length; i++) { 
+      		bttns[i].style = "";
+      		var name = names[i].innerText.toLowerCase()
+      		if (name.search(input.toLowerCase()) == -1) {
+      			bttns[i].style.display = "none";
+      		}
+      	}
+      }
     </script>
   </body>
 </html>
-
