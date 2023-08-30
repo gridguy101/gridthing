@@ -3,7 +3,7 @@
   <head>
     <title>Funny grid site lol</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <style>
       * {
         box-sizing: border-box;
@@ -31,6 +31,7 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-items: center;
         margin: 2em auto;
+        margin-top: 0px;
         max-width: 1200px;
         padding: 1em;
       }
@@ -45,6 +46,7 @@
         padding: 1em;
         transition: transform 0.2s ease-in-out;
         width: 100%;
+        max-width: 260px;
       }
       
       .button:hover {
@@ -76,12 +78,17 @@
     </style>
   </head>
   
-  <body>    
+  <body>
+    <div style="width: 100%;display: flex;justify-content: center;">
+      <div style="display: flex;justify-content: center;margin-top: 20px;height: 40px;width: 90%;max-width: 1168px;border-radius: 20px;border: solid 2px #8c8c8c;background-color: #222;">
+          <input placeholder="Search for Artists" oninput="search(this.value);" style="width: 96%;border: none;background: none;outline: none;color: #d9d8d8;">
+      </div>
+    </div>
     <div id="button-grid">
       <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1vW-nFbnR02F9BEnNPe5NBejHRGPt0QEGOYXLSePsC1k'">
         <img src="Images/ye.jpg" alt="Button 1">
         <div class="button-text">
-          <h2>Ye</h2>
+          <h2>KanYe West</h2>
           <p></p>
         </div>
       </button>
@@ -97,7 +104,7 @@
       <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/19EAMCKfw9JIALvYGL5wE82JZJboMs3mWIcC2_c-QBco'">
         <img src="Images/tyler.jpg" alt="Button 3">
         <div class="button-text">
-          <h2>Tyler the Creator</h2>
+          <h2>Tyler, The Creator</h2>
           <p></p>
         </div>
       </button>
@@ -137,7 +144,7 @@
       <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1RL5d8uSUfm4TH7u7himgbKS5UxzVN3D57T2cIpKDtNI'">
         <img src="Images/kendrick.jpg" alt="Button 6">
         <div class="button-text">
-          <h2>Kendrick</h2>
+          <h2>Kendrick Lamar</h2>
           <p></p>
         </div>
       </button>
@@ -257,7 +264,7 @@
       <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/12ubYkIfcJoE2SSXYifXg8u-CN84r2hMxwNCGU9dpmss'">
         <img src="Images/chance.jpg" alt="Button 6">
         <div class="button-text">
-          <h2>Chance</h2>
+          <h2>Chance the Rapper</h2>
           <p></p>
         </div>
       </button>
@@ -330,7 +337,7 @@
       <!-- Add more buttons here as needed -->
       
     </div>
-    
+    <h1 id="noresults" style="display: none;">No Artists Found</h1>
     <script>
       const buttons = document.querySelectorAll('.button');
       
@@ -339,7 +346,25 @@
           // Do something when button is clicked
         });
       });
+      function search(input) {
+      	var names = document.getElementsByTagName("h2");
+      	var bttns = document.getElementsByTagName("button");
+        var noresults = document.getElementById("noresults");
+				noresults.style.display = "none";
+      	for (let i = 0; i < names.length; i++) { 
+      		bttns[i].style = "";
+      		var name = names[i].innerText.toLowerCase()
+      		if (name.search(input.toLowerCase()) == -1) {
+      			bttns[i].style.display = "none";
+      		}
+      	}
+        for (let i = 0; i < bttns.length; i++) { 
+        	if(!bttns[i].style.display) {
+            return;
+        	}
+        }
+        noresults.style = "";
+      }
     </script>
   </body>
 </html>
-
