@@ -1,0 +1,78 @@
+      
+	  
+	  * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        background-color: #111;
+        color: #fff;
+        font-family: Verdana, sans-serif;
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+      }
+      
+      h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+      
+      #button-grid {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
+        margin: 2em auto;
+        margin-top: 0px;
+        max-width: 1200px;
+        padding: 1em;
+      }
+      
+      .button {
+        background-color: #222;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        transition: transform 0.2s ease-in-out;
+        width: 100%;
+        max-width: 260px;
+      }
+      
+      .button:hover {
+        transform: scale(1.1);
+      }
+      
+      .button img {
+        border-radius: 20px;
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+      
+      .button-text {
+        margin-top: 1em;
+        text-align: center;
+        color: #8c8c8c;
+      }
+      
+      .button-text h2 {
+        font-size: 1.2em;
+        margin: 0;
+      }
+      
+      .button-text p {
+        font-size: 0.8em;
+        margin: 0;
+      }
+	  
+	  #sort {
+		  height: 20px;
+		  border-radius: 90px;
+	  }
+	  /*i had to keep some of the styling in the html bc its kinda embedded into the functions of the page*/
