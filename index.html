@@ -1,107 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <title>Funny grid site lol</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      
-      body {
-        background-color: #111;
-        color: #fff;
-        font-family: Verdana, sans-serif;
-        font-size: 16px;
-        line-height: 1.4;
-        margin: 0;
-        padding: 0;
-      }
-      
-      h1 {
-        font-size: 2em;
-        margin-bottom: 1em;
-        text-align: center;
-      }
-      
-      #button-grid {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        justify-items: center;
-        margin: 2em auto;
-        margin-top: 0px;
-        max-width: 1200px;
-        padding: 1em;
-      }
-      
-      .button {
-        background-color: #222;
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        padding: 1em;
-        transition: transform 0.2s ease-in-out;
-        width: 100%;
-        max-width: 260px;
-      }
-      
-      .button:hover {
-        transform: scale(1.1);
-      }
-      
-      .button img {
-        border-radius: 20px;
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-      }
-      
-      .button-text {
-        margin-top: 1em;
-        text-align: center;
-        color: #8c8c8c;
-      }
-      
-      .button-text h2 {
-        font-size: 1.2em;
-        margin: 0;
-      }
-      
-      .button-text p {
-        font-size: 0.8em;
-        margin: 0;
-      }
-    </style>
-  </head>
-  
+    <link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+
+
   <body>
     <div style="width: 100%;display: flex;justify-content: center;">
       <div style="display: flex;justify-content: center;margin-top: 20px;height: 40px;width: 90%;max-width: 1168px;border-radius: 20px;border: solid 2px #8c8c8c;background-color: #222;">
           <input placeholder="Search for Artists" oninput="search(this.value);" style="width: 96%;border: none;background: none;outline: none;color: #d9d8d8;">
       </div>
     </div>
+	<div>
+	</div>
     <div id="button-grid">
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1vW-nFbnR02F9BEnNPe5NBejHRGPt0QEGOYXLSePsC1k/art'">
-        <img src="Images/ye.jpg" alt="Button 1">
-        <div class="button-text">
-          <h2>KanYe West</h2>
-          <p>(DMCA'd From Main URL)</p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/13ZLlITzMJQsMaSf-B5aDD8Xryeus6Y0BOW_gMzeyuSE'">
-        <img src="Images/carti.jpg" alt="Button 2">
-        <div class="button-text">
-          <h2>Playboi Carti</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1vW-nFbnR02F9BEnNPe5NBejHRGPt0QEGOYXLSePsC1k/art'">
+            <img src="Images/ye.jpg" alt="Button 1">
+            <div class="button-text">
+                <h2>KanYe West</h2>
+                <p>(DMCA'd From Main URL)</p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/13ZLlITzMJQsMaSf-B5aDD8Xryeus6Y0BOW_gMzeyuSE'">
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/13ZLlITzMJQsMaSf-B5aDD8Xryeus6Y0BOW_gMzeyuSE'">
+            <img src="Images/carti.jpg" alt="Button 2">
+            <div class="button-text">
+                <h2>Playboi Carti</h2>
+                <p></p>
+            </div>
+        </button>
+
+      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1rAU0sktd1GKpqo_AAWBtkXy10Px3BB_dnK9yJoN0umw'">
         <img src="Images/carti-alt.jpg" alt="Button 2">
         <div class="button-text">
           <h2>Playboi Carti</h2>
@@ -109,470 +43,442 @@
         </div>
       </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1ULqyC6Ws6ltTdzU6IwFxgCnw2swbKvNncTb8ZoWB1EQ'">
-        <img src="Images/tyler.jpg" alt="Button 3">
-        <div class="button-text">
-          <h2>Tyler, The Creator</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1ULqyC6Ws6ltTdzU6IwFxgCnw2swbKvNncTb8ZoWB1EQ'">
+            <img src="Images/tyler.jpg" alt="Button 3">
+            <div class="button-text">
+                <h2>Tyler, The Creator</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1pbDb-cRzqOTYKy6wdWqns_CRP-GIYKSJMHVUHzRqE_k'">
-        <img src="Images/tyler2.jpg" alt="Button 3">
-        <div class="button-text">
-          <h2>Tyler, The Creator</h2>
-          <p>(Alternate Tracker)</p>
-        </div>
-      </button>
-	
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1n15Im4plMmRLhLSOduP7_Q92BAuihVUtS4lDQLPpHbk'">
-        <img src="Images/trav.jpg" alt="Button 4">
-                <div class="button-text">
-          <h2>Travis Scott</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1opV1KErHXeVbbK-IPC1DnO03bo0rpaa7LEHLVhuuePQ'">
+            <img src="Images/tyler2.jpg" alt="Button 3">
+            <div class="button-text">
+                <h2>Tyler, The Creator</h2>
+                <p>(Alternate Tracker)</p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1q-p0ExTlioawNQJTtnwzvLxPG5C5pXxQrPXuyaeoaqE'">
-        <img src="Images/Dwake.jpeg" alt="Button 4">
-                <div class="button-text">
-          <h2>Drake</h2>
-          <p></p>
-        </div>
-      </button>
-  
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1LR5bDJkslITb2mmzLBfoNKsrChAqWljvMBy9F1AzsNo'">
-        <img src="Images/uzi.jpg" alt="Button 4">
-                <div class="button-text">
-          <h2>Lil Uzi Vert</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1n15Im4plMmRLhLSOduP7_Q92BAuihVUtS4lDQLPpHbk'">
+            <img src="Images/trav.jpg" alt="Button 4">
+            <div class="button-text">
+                <h2>Travis Scott</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1qcKurCJnE1CaRrirPieiHxhmWgetAGWOFToz252ac5Y'">
-        <img src="Images/nasx.jpg" alt="Button 5">
-        <div class="button-text">
-          <h2>Lil Nas X</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1RL5d8uSUfm4TH7u7himgbKS5UxzVN3D57T2cIpKDtNI'">
-        <img src="Images/kendrick.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Kendrick Lamar</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1eyBjj7qPxIT_P93RaSPZf5hTJemGi5jMqSJF777OsdE'">
-        <img src="Images/gambino.jpg" alt="Button 7">
-        <div class="button-text">
-          <h2>Childish Gambino</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1wlztKH_bwoTDtMZFm8-lYqzZWLCGf-XqE-gea-nGR0Y'">
-        <img src="Images/frnak.jpg" alt="Button 8">
-        <div class="button-text">
-          <h2>Frank Ocean</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1q-p0ExTlioawNQJTtnwzvLxPG5C5pXxQrPXuyaeoaqE'">
+            <img src="Images/Dwake.jpeg" alt="Button 4">
+            <div class="button-text">
+                <h2>Drake</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1YUJa-tQ3ldbRSyI92U-0HPNRyBX9qzTaxZDmlBNdQkM'">
-        <img src="Images/PinkP.jpeg" alt="Button 8">
-        <div class="button-text">
-          <h2>Pink Pantheress</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1RxDoyYK7e-LHcrhSncdGUaKqCDL2ui1kBmjJ9hd0-hk'">
-        <img src="Images/icespice.jpeg" alt="Button 9">
-        <div class="button-text">
-          <h2>Ice Spice</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1LR5bDJkslITb2mmzLBfoNKsrChAqWljvMBy9F1AzsNo'">
+            <img src="Images/uzi.jpg" alt="Button 4">
+            <div class="button-text">
+                <h2>Lil Uzi Vert</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1FUzAZyTCgFTVxQ--qbCAS2bUk4dsAw6ASxwjURPHbyI'">
-        <img src="Images/yeat.png" alt="Button 6">
-        <div class="button-text">
-          <h2>Yeat</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1Zkjo5FTYnI_GAMIjALKmqaApe1D28XbgjKub3iVROqc'">
-        <img src="Images/weeknd.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>The Weeknd</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1qcKurCJnE1CaRrirPieiHxhmWgetAGWOFToz252ac5Y'">
+            <img src="Images/nasx.jpg" alt="Button 5">
+            <div class="button-text">
+                <h2>Lil Nas X</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1P_BA-CIy05lDl9j1H06awxNqvXYJcD-KeBPVdgTO7Eo'">
-        <img src="Images/gunna.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Gunna</h2>
-          <p></p>
-        </div>
-      </button>
-	    
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1oDE9gTnEG7ufPQIOMjLTegfI47qtgNCxngmxxHZL4qA'">
-        <img src="Images/cheif.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Chief Keef</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1RL5d8uSUfm4TH7u7himgbKS5UxzVN3D57T2cIpKDtNI'">
+            <img src="Images/kendrick.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Kendrick Lamar</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1syJrbMRMIPHuPSbaMSu2_0PgGzCWD1ECEYZOS2-nBz0/best'">
-        <img src="Images/rocky.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>A$AP Rocky</h2>
-          <p>(DMCA'd From Main URL)</p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1-FxUYaxBqav0G6txAAixy7bhTGs86sItN_0_F8ekeKQ'">
-        <img src="Images/keem.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Baby Keem</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1eyBjj7qPxIT_P93RaSPZf5hTJemGi5jMqSJF777OsdE'">
+            <img src="Images/gambino.jpg" alt="Button 7">
+            <div class="button-text">
+                <h2>Childish Gambino</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1H5HnCJZe7fIDjlsSFSTzpq-cWcUM9XyDpwTaEUxBMIY'">
-        <img src="Images/jpegmafia.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>JPEGMAFIA/Devon Hendryx</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1wlztKH_bwoTDtMZFm8-lYqzZWLCGf-XqE-gea-nGR0Y'">
+            <img src="Images/frnak.jpg" alt="Button 8">
+            <div class="button-text">
+                <h2>Frank Ocean</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/11I_l0_yeZE7iwGzmAeWPBs10QWvDmYdwcC7aKz-pfO8'">
-        <img src="Images/sza.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>SZA</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1YUJa-tQ3ldbRSyI92U-0HPNRyBX9qzTaxZDmlBNdQkM'">
+            <img src="Images/PinkP.jpeg" alt="Button 8">
+            <div class="button-text">
+                <h2>Pink Pantheress</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1qgZGdNl6Dc1B-GOeoRj0skgcXeBSvltbexNtueY0FYE'">
-        <img src="Images/kencarson.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Ken Carson</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1RxDoyYK7e-LHcrhSncdGUaKqCDL2ui1kBmjJ9hd0-hk'">
+            <img src="Images/icespice.jpeg" alt="Button 9">
+            <div class="button-text">
+                <h2>Ice Spice</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1yGRwG49vl7jX7VgFCgo2ZBZTFIFzVuA8roRbb07xe40'">
-        <img src="Images/lone.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Destroy Lonely</h2>
-          <p>(Most links redirect to soundcloud)</p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1FUzAZyTCgFTVxQ--qbCAS2bUk4dsAw6ASxwjURPHbyI'">
+            <img src="Images/yeat.png" alt="Button 6">
+            <div class="button-text">
+                <h2>Yeat</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/19dsAkkH8w7nBx6ZST8d1UAAvCJTNgKBfyNxdoWiXH3E'">
-        <img src="Images/lanceyfoux.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Lancey Foux</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1Zkjo5FTYnI_GAMIjALKmqaApe1D28XbgjKub3iVROqc'">
+            <img src="Images/weeknd.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>The Weeknd</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1_dFPF4tSdIuwRUj_UXUFz5qeNVJm-9lCl3zhIGXt0wI'">
-        <img src="Images/westside.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Westside Gunn</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1P_BA-CIy05lDl9j1H06awxNqvXYJcD-KeBPVdgTO7Eo'">
+            <img src="Images/gunna.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Gunna</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1pogjtB01aiqXoc3Hun4wJZbWVA6eRerzX88BNnoyM2Y'">
-        <img src="Images/deathgrips.png" alt="Button 6">
-        <div class="button-text">
-          <h2>Death Grips</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1oDE9gTnEG7ufPQIOMjLTegfI47qtgNCxngmxxHZL4qA'">
+            <img src="Images/cheif.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Chief Keef</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1skAByFoveXb7PussjJWUBnyl5H8K79LoNpLslRTttNU'">
-        <img src="Images/bladee.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Bladee</h2>
-          <p>(mostly external links)</p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/12ubYkIfcJoE2SSXYifXg8u-CN84r2hMxwNCGU9dpmss'">
-        <img src="Images/chance.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Chance the Rapper</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1Xeoh2lXnO93BTFpwTH4IzZSfPHouC1wBdyUDx-Qamjs'">
-        <img src="Images/Don-Toliver-1.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Don Toliver</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1VN3BAxAtQ3Hccz6t9PQmz-ayhMLti9VAe0tzxQRyzxU'">
-        <img src="Images/cudi.jpeg" alt="Button 6">
-        <div class="button-text">
-          <h2>Kid Cudi</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1ExDPPFl194ZdUwHXyqp-1Ku3l36jvw_-RadCeEH9VXE'">
-        <img src="Images/lana.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Lana Del Rey</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1-Kd8molYeR1WpmWR81DqmSCGng3g-AVmZfgd752kh3M'">
-        <img src="Images/pop.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Pop Smoke</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1zEbzMVXFXzuY4wLdPvdQA23lb3RwCSOKqWtHsllXNk8'">
-        <img src="Images/doom.jpeg" alt="Button 6">
-        <div class="button-text">
-          <h2>MF DOOM</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1EKEnvdiwSudiPJSePPzfCXIQ_W-AYeAIY6_r-a12bdM'">
-        <img src="Images/earl.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Earl Sweatshirt</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1syJrbMRMIPHuPSbaMSu2_0PgGzCWD1ECEYZOS2-nBz0/best'">
+            <img src="Images/rocky.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>A$AP Rocky</h2>
+                <p>(DMCA'd From Main URL)</p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1Gd7k0tURHQutRgCBs698MMWst1Ey3VBM4Rlyhvq6VG4'">
-        <img src="Images/jaye.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Jay Electronica</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/149xFObwLI9lMCWJPs3RBZhLJGMQ9cqkr1vIVsIVuV5c'">
-        <img src="Images/kaycyy.jpeg" alt="Button 6">
-        <div class="button-text">
-          <h2>Kaycyy</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1-FxUYaxBqav0G6txAAixy7bhTGs86sItN_0_F8ekeKQ'">
+            <img src="Images/keem.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Baby Keem</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1SJOS9kPAlc94yi79YBkEQhJxxaqt0RbuocyahpDRSvw'">
-        <img src="Images/taylorswift.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Taylor Swift</h2>
-          <p>(work in progress)</p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1H5HnCJZe7fIDjlsSFSTzpq-cWcUM9XyDpwTaEUxBMIY'">
+            <img src="Images/jpegmafia.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>JPEGMAFIA/Devon Hendryx</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/171VyCWzUa8rYCiEjdrP_8L0GJ7-orSZbJF8i7SNG8S0'">
-        <img src="Images/eminem.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Eminem</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/11I_l0_yeZE7iwGzmAeWPBs10QWvDmYdwcC7aKz-pfO8'">
+            <img src="Images/sza.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>SZA</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1g9RxIQ2JTVYwy5GTYoOnxH3RoNNis7l8zq9tdT7QPSw'">
-        <img src="Images/oliviarodrigo.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Olivia Rodrigo</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1qgZGdNl6Dc1B-GOeoRj0skgcXeBSvltbexNtueY0FYE'">
+            <img src="Images/kencarson.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Ken Carson</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1rhvQ9F8VRAj-jOyTLsvhORsVCyvcMRXJuGoDR1-z4jY'">
-        <img src="Images/olivertree.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Oliver Tree</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1yGRwG49vl7jX7VgFCgo2ZBZTFIFzVuA8roRbb07xe40'">
+            <img src="Images/lone.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Destroy Lonely</h2>
+                <p>(Most links redirect to soundcloud)</p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/10nxKfjzuGTlvieAoDWJ8VcDPj2Jxy1bnNeLxzjLq2i8'">
-        <img src="Images/pierre.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Pi'erre Bourne</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/19dsAkkH8w7nBx6ZST8d1UAAvCJTNgKBfyNxdoWiXH3E'">
+            <img src="Images/lanceyfoux.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Lancey Foux</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1qjN2OaBVhulG0U9G-PXbmtwSfah1qazIiydK42A1Dk0'">
-        <img src="Images/jid.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>JID</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1_dFPF4tSdIuwRUj_UXUFz5qeNVJm-9lCl3zhIGXt0wI'">
+            <img src="Images/westside.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Westside Gunn</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1CEvDCty1C0LEHceq_1cFSiRlNI5Jhj1n-nzCczH83j4'">
-        <img src="Images/pushat.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Pusha T</h2>
-          <p>(work in progress)</p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1pogjtB01aiqXoc3Hun4wJZbWVA6eRerzX88BNnoyM2Y'">
+            <img src="Images/deathgrips.png" alt="Button 6">
+            <div class="button-text">
+                <h2>Death Grips</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1agSdRNlasUspM9M7oZ_-dcA-njbwV5DqM3rWT3r5OUU'">
-        <img src="Images/jcole.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>J. Cole</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1skAByFoveXb7PussjJWUBnyl5H8K79LoNpLslRTttNU'">
+            <img src="Images/bladee.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Bladee</h2>
+                <p>(mostly external links)</p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1i59TKrIZ1OvFFPJFuOMw1VXlvyzaVOH0Wb0vVJp9BTw'">
-        <img src="Images/michaeljackson.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Michael Jackson</h2>
-          <p>(hee hee)</p>
-        </div>
-      </button>
-	    
-     <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1cmJx1BlvgW6nYjZpiOpgzp8QZC6qN8b7op3w9D1N3HE'">
-        <img src="Images/brent.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Brent Faiyaz</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/12ubYkIfcJoE2SSXYifXg8u-CN84r2hMxwNCGU9dpmss'">
+            <img src="Images/chance.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Chance the Rapper</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1DKf6MBZ6KcKoKFH5Vnl1qc3CrPIiHey-EgOrpKpLZQo'">
-        <img src="Images/rihanna.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Rihanna</h2>
-          <p></p>
-        </div>
-      </button>
-	
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/17EjN1Q4F-FcKGWmZcjDYtCHk9VxwbHVhSrNyzxIb3xk'">
-        <img src="Images/sb.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>$uicideboy$</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1Xeoh2lXnO93BTFpwTH4IzZSfPHouC1wBdyUDx-Qamjs'">
+            <img src="Images/Don-Toliver-1.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Don Toliver</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1hYP9poOhBqk9OERZsm62NIT1U_SvB6Medd2LOR0JfsE'">
-        <img src="Images/ethel-cain.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Ethel Cain</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1VN3BAxAtQ3Hccz6t9PQmz-ayhMLti9VAe0tzxQRyzxU'">
+            <img src="Images/cudi.jpeg" alt="Button 6">
+            <div class="button-text">
+                <h2>Kid Cudi</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1wS3D9gHB79NE7LrjEF3DXUxJzfex8VbkY0-1p2aV5Ew'">
-        <img src="Images/billie.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Billie Eilish</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1ExDPPFl194ZdUwHXyqp-1Ku3l36jvw_-RadCeEH9VXE'">
+            <img src="Images/lana.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Lana Del Rey</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1TnALmkQdRX_spdUMLLamizAZYD3rERO_iGGzCqD-A6M'">
-        <img src="Images/nas.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>NAS</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1-Kd8molYeR1WpmWR81DqmSCGng3g-AVmZfgd752kh3M'">
+            <img src="Images/pop.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Pop Smoke</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1T8YgFsccEHNiwBQxMg1030nbIY07blIubr31eJ6D9NE'">
-        <img src="Images/CRJ.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Carly Rae Jepsen</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1zEbzMVXFXzuY4wLdPvdQA23lb3RwCSOKqWtHsllXNk8'">
+            <img src="Images/doom.jpeg" alt="Button 6">
+            <div class="button-text">
+                <h2>MF DOOM</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1FPlWbXnx94y5FODJ2qniLf0BzViNSAmj6Xdfw1ZNwQ4'">
-        <img src="Images/joji.jpg" alt="Button 6">
-        <div class="button-text">
-          <h2>Joji</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1EKEnvdiwSudiPJSePPzfCXIQ_W-AYeAIY6_r-a12bdM'">
+            <img src="Images/earl.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Earl Sweatshirt</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1WsQu4DDuXaPywG_DGXG30TOmQeHF-924b8UdL-ZfZjo'">
-        <img src="Images/fivio.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Fivio Foreign</h2>
-          <p></p>
-        </div>
-      </button>
-      
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1JnhgD8kdZV7tw60xJ0x81fDTG06iASd11zF85-uvKcg'">
-        <img src="Images/ariana.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Ariana Grande</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1Gd7k0tURHQutRgCBs698MMWst1Ey3VBM4Rlyhvq6VG4'">
+            <img src="Images/jaye.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Jay Electronica</h2>
+                <p></p>
+            </div>
+        </button>
 
-      <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1CCe1DI9VIp0J4MQyTsdMuOriZ9ucmCVMw6nS9j8e4N0'">
-        <img src="Images/gibbs.webp" alt="Button 6">
-        <div class="button-text">
-          <h2>Freddie Gibbs</h2>
-          <p></p>
-        </div>
-      </button>
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/149xFObwLI9lMCWJPs3RBZhLJGMQ9cqkr1vIVsIVuV5c'">
+            <img src="Images/kaycyy.jpeg" alt="Button 6">
+            <div class="button-text">
+                <h2>Kaycyy</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1SJOS9kPAlc94yi79YBkEQhJxxaqt0RbuocyahpDRSvw'">
+            <img src="Images/taylorswift.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Taylor Swift</h2>
+                <p>(work in progress)</p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/171VyCWzUa8rYCiEjdrP_8L0GJ7-orSZbJF8i7SNG8S0'">
+            <img src="Images/eminem.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Eminem</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1g9RxIQ2JTVYwy5GTYoOnxH3RoNNis7l8zq9tdT7QPSw'">
+            <img src="Images/oliviarodrigo.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Olivia Rodrigo</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1rhvQ9F8VRAj-jOyTLsvhORsVCyvcMRXJuGoDR1-z4jY'">
+            <img src="Images/olivertree.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Oliver Tree</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/10nxKfjzuGTlvieAoDWJ8VcDPj2Jxy1bnNeLxzjLq2i8'">
+            <img src="Images/pierre.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Pi'erre Bourne</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1qjN2OaBVhulG0U9G-PXbmtwSfah1qazIiydK42A1Dk0'">
+            <img src="Images/jid.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>JID</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1CEvDCty1C0LEHceq_1cFSiRlNI5Jhj1n-nzCczH83j4'">
+            <img src="Images/pushat.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Pusha T</h2>
+                <p>(work in progress)</p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1agSdRNlasUspM9M7oZ_-dcA-njbwV5DqM3rWT3r5OUU'">
+            <img src="Images/jcole.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>J. Cole</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1i59TKrIZ1OvFFPJFuOMw1VXlvyzaVOH0Wb0vVJp9BTw'">
+            <img src="Images/michaeljackson.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Michael Jackson</h2>
+                <p>(hee hee)</p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1cmJx1BlvgW6nYjZpiOpgzp8QZC6qN8b7op3w9D1N3HE'">
+            <img src="Images/brent.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Brent Faiyaz</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1DKf6MBZ6KcKoKFH5Vnl1qc3CrPIiHey-EgOrpKpLZQo'">
+            <img src="Images/rihanna.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Rihanna</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/17EjN1Q4F-FcKGWmZcjDYtCHk9VxwbHVhSrNyzxIb3xk'">
+            <img src="Images/sb.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>$uicideboy$</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1hYP9poOhBqk9OERZsm62NIT1U_SvB6Medd2LOR0JfsE'">
+            <img src="Images/ethel-cain.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Ethel Cain</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1wS3D9gHB79NE7LrjEF3DXUxJzfex8VbkY0-1p2aV5Ew'">
+            <img src="Images/billie.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Billie Eilish</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1TnALmkQdRX_spdUMLLamizAZYD3rERO_iGGzCqD-A6M'">
+            <img src="Images/nas.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>NAS</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1T8YgFsccEHNiwBQxMg1030nbIY07blIubr31eJ6D9NE'">
+            <img src="Images/CRJ.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Carly Rae Jepsen</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1FPlWbXnx94y5FODJ2qniLf0BzViNSAmj6Xdfw1ZNwQ4'">
+            <img src="Images/joji.jpg" alt="Button 6">
+            <div class="button-text">
+                <h2>Joji</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1WsQu4DDuXaPywG_DGXG30TOmQeHF-924b8UdL-ZfZjo'">
+            <img src="Images/fivio.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Fivio Foreign</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1JnhgD8kdZV7tw60xJ0x81fDTG06iASd11zF85-uvKcg'">
+            <img src="Images/ariana.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Ariana Grande</h2>
+                <p></p>
+            </div>
+        </button>
+
+        <button class="button" onclick="window.location.href='https://trackerhub.vercel.app/s/1CCe1DI9VIp0J4MQyTsdMuOriZ9ucmCVMw6nS9j8e4N0'">
+            <img src="Images/gibbs.webp" alt="Button 6">
+            <div class="button-text">
+                <h2>Freddie Gibbs</h2>
+                <p></p>
+            </div>
+        </button>
 
 
-      <!-- Add more buttons here as needed -->
-      
+        <!-- Add more buttons here as needed -->
+
     </div>
     <h1 id="noresults" style="display: none;">No Artists Found</h1>
-    <script>
-      const buttons = document.querySelectorAll('.button');
-      
-      buttons.forEach(button => {
-        button.addEventListener('click', event => {
-          // Do something when button is clicked
-        });
-      });
-      function search(input) {
-      	var names = document.getElementsByTagName("h2");
-      	var bttns = document.getElementsByTagName("button");
-        var noresults = document.getElementById("noresults");
-				noresults.style.display = "none";
-      	for (let i = 0; i < names.length; i++) { 
-      		bttns[i].style = "";
-      		var name = names[i].innerText.toLowerCase()
-      		if (name.search(input.toLowerCase()) == -1) {
-      			bttns[i].style.display = "none";
-      		}
-      	}
-        for (let i = 0; i < bttns.length; i++) { 
-        	if(!bttns[i].style.display) {
-            return;
-        	}
-        }
-        noresults.style = "";
-      }
-    </script>
   </body>
 </html>
